@@ -1,0 +1,6 @@
+RewriteEngine On
+# htaccess наследуется, но не всегда
+RewriteCond %{REQUEST_FILENAME} !-f
+# Rewrite condition. Если текущий запрос идет не на сущ. файл (стили и т.п.), тогда используй правило ниже. Не рекомендуется ставить !-d (листинг папок).
+RewriteRule (.*) index.php?$1 [L,QSA]
+# ключи

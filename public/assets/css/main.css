@@ -1,0 +1,19 @@
+body {
+  min-width: 320px;
+}
+
+html,
+body {
+  height: 100%; /* прижать футер к низу */
+  
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main.main {
+  flex: 1 1 auto;
+}
